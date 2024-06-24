@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(100, 141, 127);
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+
+#header {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+#location-input {
+    height: 30px;
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    margin-right: 20px;
+    margin: 0px; /* Espacio entre el input y la info del clima */
+    
+}
+
+#location-input::placeholder {
+    color: rgba(31, 141, 209, 0.5);
+}
+
+#weather-info {
+    font-size: 18px;
+    color: white; /* Cambiado a blanco para mejor contraste */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejor visibilidad */
+    padding: 5px 10px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border-radius: 20px;
+    margin-top: -10px; /* Ajusta el espacio para que el mapa no se superponga con el encabezado */
+}
